@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: #1E1E2F;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #28293D;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero .container .randomNumber {
+    background: #37384D;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .hero .container .randomNumber p span {
+    color: #29D8D5;
+    font-weight: bold;
+    font-size: 32px;
+  }
+  
+  .hero .numberContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .hero .numberContainer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hero .numberContainer div p {
+    margin: 0;
+    font-size: 18px;
+    color: #F5F5F5;
+  }
+  
+  .hero .numberContainer div input {
+    padding: 10px;
+    border: 1px solid #52537A;
+    border-radius: 8px;
+    width: 60%;
+    background: #2F3045;
+    color: #29D8D5;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .hero .container button {
+    border: none;
+    background: #29D8D5;
+    color: #1E1E2F;
+    padding: 14px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .hero .container button:hover {
+    background: #21B3AF;
+  }
+  
+  .number {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  @keyframes fall {
+    from {
+      transform: translateY(-100vh);
+    }
+    to {
+      transform: translateY(100vh);
+    }
+  }
